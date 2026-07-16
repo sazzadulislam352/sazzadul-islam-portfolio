@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Automated Employee Reporting | Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+  :root{--primary:#00c9a7;--dark:#0a2540;--light:#f4f7fc;--accent:#f7c948;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Segoe UI',sans-serif;background:var(--light);color:#1a1a2e;padding:24px;}
+  header{background:var(--dark);color:#fff;padding:24px;border-radius:10px;margin-bottom:24px;}
+  header h1{font-size:1.6rem;}
+  header p{opacity:.8;margin-top:6px;font-size:.9rem;}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-bottom:24px;}
+  .kpi{background:#fff;border-radius:10px;padding:18px;border-left:4px solid var(--primary);box-shadow:0 2px 6px rgba(0,0,0,.06);}
+  .kpi .value{font-size:1.6rem;font-weight:700;color:var(--dark);}
+  .kpi .label{font-size:.8rem;color:#666;margin-top:4px;}
+  .charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:20px;}
+  .card{background:#fff;border-radius:10px;padding:18px;box-shadow:0 2px 6px rgba(0,0,0,.06);}
+  .card h3{font-size:1rem;margin-bottom:12px;color:var(--dark);}
+  table{width:100%;border-collapse:collapse;font-size:.9rem;}
+  th,td{text-align:left;padding:8px;border-bottom:1px solid #eee;}
+  footer{text-align:center;margin-top:24px;font-size:.8rem;color:#888;}
+  a{color:var(--primary);}
+</style>
+</head>
+<body>
+<header>
+  <h1>Automated Employee Reporting - Dashboard</h1>
+  <p>SQL + Pandas automated monthly performance reporting | Sample dataset (50 employees x 4 months) | <a href="../../index.html" style="color:#fff;text-decoration:underline;">Back to portfolio</a></p>
+</header>
+
+<div class="kpis">
+  <div class="kpi"><div class="value">50</div><div class="label">Total Employees</div></div>
+  <div class="kpi"><div class="value">90.8</div><div class="label">Avg Performance Score</div></div>
+  <div class="kpi"><div class="value">93.6%</div><div class="label">Avg Attendance Rate</div></div>
+  <div class="kpi"><div class="value">45%</div><div class="label">Faster Processing (vs. manual)</div></div>
+</div>
+
+<div class="charts">
+  <div class="card"><h3>Avg Performance Score by Department</h3><canvas id="deptChart"></canvas></div>
+  <div class="card"><h3>Monthly Performance Trend</h3><canvas id="monthChart"></canvas></div>
+  <div class="card">
+    <h3>Top 5 Performers (Latest Month)</h3>
+    <table>
+      <thead><tr><th>Employee</th><th>Department</th><th>Score</th></tr></thead>
+      <tbody><tr><td>Quinn Moore</td><td>Marketing</td><td>107.8</td></tr><tr><td>Sydney Jones</td><td>Support</td><td>106.5</td></tr><tr><td>Emerson Thomas</td><td>Marketing</td><td>105.3</td></tr><tr><td>Hayden Wilson</td><td>Finance</td><td>104.9</td></tr><tr><td>Sydney Miller</td><td>Support</td><td>102.9</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<footer>Generated from projects/automated-employee-reporting/data.csv - see analysis.py / analysis.sql for methodology.</footer>
+
+<script>
+const deptData = {"Sales":88.2,"Marketing":92.6,"Support":97.5,"Operations":92.6,"Finance":86.9};
+const monthData = {"2025-01":90.9,"2025-02":90.7,"2025-03":91.3,"2025-04":90.5};
+
+new Chart(document.getElementById('deptChart'), {
+  type: 'bar',
+  data: { labels: Object.keys(deptData), datasets: [{ label: 'Avg Performance Score', data: Object.values(deptData), backgroundColor: '#00c9a7' }] },
+  options: { plugins: { legend: { display:false } } }
+});
+
+new Chart(document.getElementById('monthChart'), {
+  type: 'line',
+  data: { labels: Object.keys(monthData), datasets: [{ label: 'Avg Performance Score', data: Object.values(monthData), borderColor: '#f7c948', backgroundColor:'rgba(247,201,72,.2)', fill:true, tension:.3 }] }
+});
+</script>
+</body>
+</html>
