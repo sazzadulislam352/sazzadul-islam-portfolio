@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Customer Market Analysis | Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+  :root{--primary:#00c9a7;--dark:#0a2540;--light:#f4f7fc;--accent:#f7c948;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Segoe UI',sans-serif;background:var(--light);color:#1a1a2e;padding:24px;}
+  header{background:var(--dark);color:#fff;padding:24px;border-radius:10px;margin-bottom:24px;}
+  header h1{font-size:1.6rem;}
+  header p{opacity:.8;margin-top:6px;font-size:.9rem;}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-bottom:24px;}
+  .kpi{background:#fff;border-radius:10px;padding:18px;border-left:4px solid var(--primary);box-shadow:0 2px 6px rgba(0,0,0,.06);}
+  .kpi .value{font-size:1.6rem;font-weight:700;color:var(--dark);}
+  .kpi .label{font-size:.8rem;color:#666;margin-top:4px;}
+  .charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:20px;}
+  .card{background:#fff;border-radius:10px;padding:18px;box-shadow:0 2px 6px rgba(0,0,0,.06);}
+  .card h3{font-size:1rem;margin-bottom:12px;color:var(--dark);}
+  footer{text-align:center;margin-top:24px;font-size:.8rem;color:#888;}
+  a{color:var(--primary);}
+</style>
+</head>
+<body>
+<header>
+  <h1>Customer Market Analysis - Dashboard</h1>
+  <p>RFM-based customer segmentation from transactional data | Sample dataset (249 transactions, 50 customers) | <a href="../../index.html" style="color:#fff;text-decoration:underline;">Back to portfolio</a></p>
+</header>
+
+<div class="kpis">
+  <div class="kpi"><div class="value">50</div><div class="label">Total Customers</div></div>
+  <div class="kpi"><div class="value">249</div><div class="label">Total Transactions</div></div>
+  <div class="kpi"><div class="value">$80,082.76</div><div class="label">Total Revenue</div></div>
+  <div class="kpi"><div class="value">$321.62</div><div class="label">Avg Order Value</div></div>
+</div>
+
+<div class="charts">
+  <div class="card"><h3>Customer Segments (RFM)</h3><canvas id="segChart"></canvas></div>
+  <div class="card"><h3>Revenue by Category</h3><canvas id="catChart"></canvas></div>
+  <div class="card"><h3>Monthly Revenue Trend</h3><canvas id="monthChart"></canvas></div>
+  <div class="card"><h3>Revenue by Region</h3><canvas id="regionChart"></canvas></div>
+</div>
+
+<footer>Generated from projects/customer-market-analysis/data.csv - see analysis.py / analysis.sql for methodology.</footer>
+
+<script>
+const segData = {"Champions":8,"Loyal Customers":11,"At Risk":16,"Needs Attention":15};
+const catData = {"Electronics":12684.39,"Clothing":13084.14,"Home & Garden":11356.66,"Groceries":20551.96,"Beauty":10677.73,"Sports":11727.88};
+const monthData = [7755.53,4828.82,9096.59,6366.8,6866.37,6371.82,5303.2,8403.03,4667.04,7085.66,7027.47,6310.43];
+const regionData = {"North":19756.12,"South":17602.94,"East":10827.75,"West":16374.28,"Central":15521.67};
+const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const palette = ["#00c9a7","#0a2540","#f7c948","#ff7f6b","#6c5ce7","#4f9ed6"];
+
+new Chart(document.getElementById('segChart'), {
+  type: 'doughnut',
+  data: { labels: Object.keys(segData), datasets: [{ data: Object.values(segData), backgroundColor: palette }] }
+});
+
+new Chart(document.getElementById('catChart'), {
+  type: 'bar',
+  data: { labels: Object.keys(catData), datasets: [{ label: 'Revenue ($)', data: Object.values(catData), backgroundColor: '#00c9a7' }] },
+  options: { plugins: { legend: { display:false } } }
+});
+
+new Chart(document.getElementById('monthChart'), {
+  type: 'line',
+  data: { labels: months, datasets: [{ label: 'Revenue ($)', data: monthData, borderColor: '#f7c948', backgroundColor:'rgba(247,201,72,.2)', fill:true, tension:.3 }] }
+});
+
+new Chart(document.getElementById('regionChart'), {
+  type: 'bar',
+  data: { labels: Object.keys(regionData), datasets: [{ label: 'Revenue ($)', data: Object.values(regionData), backgroundColor: '#0a2540' }] },
+  options: { indexAxis: 'y', plugins: { legend: { display:false } } }
+});
+</script>
+</body>
+</html>
