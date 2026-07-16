@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sales Performance Analysis | Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+  :root{--primary:#00c9a7;--dark:#0a2540;--light:#f4f7fc;--accent:#f7c948;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Segoe UI',sans-serif;background:var(--light);color:#1a1a2e;padding:24px;}
+  header{background:var(--dark);color:#fff;padding:24px;border-radius:10px;margin-bottom:24px;}
+  header h1{font-size:1.6rem;}
+  header p{opacity:.8;margin-top:6px;font-size:.9rem;}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-bottom:24px;}
+  .kpi{background:#fff;border-radius:10px;padding:18px;border-left:4px solid var(--primary);box-shadow:0 2px 6px rgba(0,0,0,.06);}
+  .kpi .value{font-size:1.6rem;font-weight:700;color:var(--dark);}
+  .kpi .label{font-size:.8rem;color:#666;margin-top:4px;}
+  .charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:20px;}
+  .card{background:#fff;border-radius:10px;padding:18px;box-shadow:0 2px 6px rgba(0,0,0,.06);}
+  .card h3{font-size:1rem;margin-bottom:12px;color:var(--dark);}
+  footer{text-align:center;margin-top:24px;font-size:.8rem;color:#888;}
+  a{color:var(--primary);}
+</style>
+</head>
+<body>
+<header>
+  <h1>Sales Performance Analysis - Dashboard</h1>
+  <p>Excel + SQL + Tableau-style reporting workflow | Sample dataset (260 sales, 10 reps) | <a href="../../index.html" style="color:#fff;text-decoration:underline;">Back to portfolio</a></p>
+</header>
+
+<div class="kpis">
+  <div class="kpi"><div class="value">260</div><div class="label">Total Sales</div></div>
+  <div class="kpi"><div class="value">$232,564</div><div class="label">Total Revenue</div></div>
+  <div class="kpi"><div class="value">$894.48</div><div class="label">Avg Sale Value</div></div>
+  <div class="kpi"><div class="value">40%</div><div class="label">Faster Reporting (vs. manual)</div></div>
+</div>
+
+<div class="charts">
+  <div class="card"><h3>Revenue by Region</h3><canvas id="regionChart"></canvas></div>
+  <div class="card"><h3>Top Sales Reps</h3><canvas id="repChart"></canvas></div>
+  <div class="card"><h3>Monthly Revenue Trend</h3><canvas id="monthChart"></canvas></div>
+  <div class="card"><h3>Online vs Retail Revenue</h3><canvas id="channelChart"></canvas></div>
+</div>
+
+<footer>Generated from projects/sales-performance-analysis/data.csv - see analysis.py / analysis.sql for methodology.</footer>
+
+<script>
+const regionData = {"North":45346,"South":40642,"East":42783,"West":36973,"Central":66820};
+const repLabels = ["Sophia Hayes","William Foster","James Blake","Liam Turner","Emma Clarke","Benjamin Ross"];
+const repValues = [38102,26968,25728,24584,22666,21602];
+const monthData = [12368,11037,13445,20851,41590,21694,15883,19077,19346,12868,22817,21588];
+const channelData = {"Online":142723,"Retail":89841};
+const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+new Chart(document.getElementById('regionChart'), {
+  type: 'bar',
+  data: { labels: Object.keys(regionData), datasets: [{ label: 'Revenue ($)', data: Object.values(regionData), backgroundColor: '#0a2540' }] },
+  options: { plugins: { legend: { display:false } } }
+});
+
+new Chart(document.getElementById('repChart'), {
+  type: 'bar',
+  data: { labels: repLabels, datasets: [{ label: 'Revenue ($)', data: repValues, backgroundColor: '#00c9a7' }] },
+  options: { indexAxis: 'y', plugins: { legend: { display:false } } }
+});
+
+new Chart(document.getElementById('monthChart'), {
+  type: 'line',
+  data: { labels: months, datasets: [{ label: 'Revenue ($)', data: monthData, borderColor: '#f7c948', backgroundColor:'rgba(247,201,72,.2)', fill:true, tension:.3 }] }
+});
+
+new Chart(document.getElementById('channelChart'), {
+  type: 'doughnut',
+  data: { labels: Object.keys(channelData), datasets: [{ data: Object.values(channelData), backgroundColor: ['#00c9a7','#f7c948'] }] }
+});
+</script>
+</body>
+</html>
