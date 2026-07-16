@@ -1,0 +1,250 @@
+customer_id,transaction_id,transaction_date,product_category,amount,quantity,region,age,gender
+1,1001,2024-11-12,Clothing,175.86,3,West,39,Female
+1,1002,2024-04-22,Home & Garden,355.50,2,West,39,Female
+1,1003,2024-01-02,Clothing,418.83,3,West,39,Female
+1,1004,2024-01-12,Home & Garden,77.95,5,West,39,Female
+1,1005,2024-07-12,Clothing,41.78,1,West,39,Female
+1,1006,2024-10-22,Electronics,170.49,1,West,39,Female
+2,1007,2024-03-17,Groceries,160.95,3,South,39,Male
+2,1008,2024-03-15,Clothing,694.04,4,South,39,Male
+2,1009,2024-09-05,Clothing,39.32,2,South,39,Male
+3,1010,2024-01-06,Home & Garden,155.55,5,West,62,Male
+3,1011,2024-01-29,Home & Garden,374.70,3,West,62,Male
+3,1012,2024-03-06,Beauty,298.55,5,West,62,Male
+3,1013,2024-07-24,Groceries,145.00,5,West,62,Male
+3,1014,2024-08-05,Sports,355.02,3,West,62,Male
+3,1015,2024-11-03,Clothing,249.80,4,West,62,Male
+3,1016,2024-07-18,Beauty,897.15,5,West,62,Male
+4,1017,2024-10-27,Beauty,117.40,5,South,22,Female
+4,1018,2024-09-12,Electronics,198.55,5,South,22,Female
+4,1019,2024-05-02,Clothing,112.95,3,South,22,Female
+4,1020,2024-10-16,Clothing,713.32,4,South,22,Female
+5,1021,2024-11-27,Electronics,519.52,4,South,24,Female
+5,1022,2024-01-18,Clothing,400.72,4,South,24,Female
+5,1023,2024-05-03,Beauty,249.12,4,South,24,Female
+5,1024,2024-12-27,Electronics,399.14,2,South,24,Female
+6,1025,2024-05-25,Home & Garden,260.07,3,North,26,Female
+6,1026,2024-08-11,Home & Garden,347.50,5,North,26,Female
+6,1027,2024-04-19,Groceries,153.99,3,North,26,Female
+6,1028,2024-09-10,Clothing,192.68,4,North,26,Female
+7,1029,2024-09-17,Groceries,198.76,2,South,23,Male
+7,1030,2024-11-12,Sports,455.75,5,South,23,Male
+7,1031,2024-02-23,Groceries,902.25,5,South,23,Male
+8,1032,2024-11-03,Groceries,509.30,5,West,56,Male
+8,1033,2024-07-04,Beauty,18.17,1,West,56,Male
+8,1034,2024-08-18,Beauty,799.28,4,West,56,Male
+8,1035,2024-06-12,Sports,611.75,5,West,56,Male
+9,1036,2024-05-13,Groceries,340.30,2,Central,50,Male
+9,1037,2024-12-15,Electronics,131.73,1,Central,50,Male
+9,1038,2024-04-09,Sports,429.45,3,Central,50,Male
+9,1039,2024-07-26,Electronics,62.44,1,Central,50,Male
+9,1040,2024-08-31,Beauty,632.80,4,Central,50,Male
+9,1041,2024-06-04,Groceries,289.38,3,Central,50,Male
+9,1042,2024-04-07,Clothing,67.00,2,Central,50,Male
+10,1043,2024-01-26,Electronics,34.94,1,East,44,Female
+10,1044,2024-10-27,Sports,309.30,3,East,44,Female
+10,1045,2024-07-25,Electronics,101.40,2,East,44,Female
+10,1046,2024-10-17,Electronics,763.30,5,East,44,Female
+10,1047,2024-01-29,Groceries,540.90,5,East,44,Female
+11,1048,2024-05-25,Beauty,588.06,3,North,20,Male
+11,1049,2024-03-16,Home & Garden,337.08,2,North,20,Male
+11,1050,2024-11-10,Sports,287.60,5,North,20,Male
+11,1051,2024-04-24,Sports,467.24,4,North,20,Male
+11,1052,2024-07-21,Home & Garden,450.76,4,North,20,Male
+11,1053,2024-04-22,Groceries,988.85,5,North,20,Male
+12,1054,2024-05-04,Sports,354.82,2,West,50,Female
+12,1055,2024-09-09,Groceries,634.35,5,West,50,Female
+12,1056,2024-04-10,Electronics,386.98,2,West,50,Female
+12,1057,2024-03-09,Groceries,598.84,4,West,50,Female
+13,1058,2024-06-02,Electronics,542.04,3,Central,61,Female
+13,1059,2024-01-17,Home & Garden,582.08,4,Central,61,Female
+13,1060,2024-10-29,Clothing,28.38,1,Central,61,Female
+13,1061,2024-04-08,Sports,84.12,4,Central,61,Female
+13,1062,2024-11-27,Beauty,345.26,2,Central,61,Female
+14,1063,2024-09-20,Clothing,177.78,3,Central,34,Male
+14,1064,2024-10-12,Groceries,363.33,3,Central,34,Male
+14,1065,2024-01-13,Beauty,135.30,5,Central,34,Male
+14,1066,2024-07-31,Home & Garden,101.98,2,Central,34,Male
+14,1067,2024-09-25,Sports,264.06,2,Central,34,Male
+14,1068,2024-07-03,Beauty,91.58,2,Central,34,Male
+15,1069,2024-03-05,Sports,407.80,4,North,21,Female
+15,1070,2024-10-08,Electronics,411.63,3,North,21,Female
+15,1071,2024-07-21,Clothing,134.60,1,North,21,Female
+15,1072,2024-01-19,Clothing,538.75,5,North,21,Female
+15,1073,2024-04-29,Sports,180.15,3,North,21,Female
+16,1074,2024-03-09,Home & Garden,130.51,1,West,54,Male
+16,1075,2024-03-18,Sports,31.99,1,West,54,Male
+16,1076,2024-09-03,Home & Garden,379.44,3,West,54,Male
+16,1077,2024-03-15,Electronics,836.75,5,West,54,Male
+16,1078,2024-04-02,Groceries,369.96,4,West,54,Male
+16,1079,2024-06-04,Home & Garden,173.36,1,West,54,Male
+16,1080,2024-01-24,Clothing,41.01,3,West,54,Male
+17,1081,2024-07-06,Electronics,337.44,3,Central,54,Female
+17,1082,2024-09-15,Home & Garden,354.06,3,Central,54,Female
+17,1083,2024-09-22,Electronics,161.48,4,Central,54,Female
+17,1084,2024-06-17,Sports,253.80,2,Central,54,Female
+17,1085,2024-06-20,Electronics,307.32,3,Central,54,Female
+17,1086,2024-12-11,Beauty,145.60,1,Central,54,Female
+17,1087,2024-01-23,Beauty,20.73,3,Central,54,Female
+18,1088,2024-12-23,Groceries,679.90,5,East,41,Female
+18,1089,2024-02-28,Sports,964.05,5,East,41,Female
+18,1090,2024-11-15,Electronics,57.45,5,East,41,Female
+18,1091,2024-06-14,Beauty,279.36,4,East,41,Female
+18,1092,2024-05-16,Sports,216.64,4,East,41,Female
+19,1093,2024-05-29,Groceries,259.94,2,West,20,Male
+19,1094,2024-11-15,Beauty,34.72,4,West,20,Male
+19,1095,2024-05-19,Clothing,544.41,3,West,20,Male
+19,1096,2024-07-12,Sports,265.84,4,West,20,Male
+20,1097,2024-10-31,Groceries,362.40,4,Central,26,Female
+20,1098,2024-03-07,Home & Garden,116.94,3,Central,26,Female
+20,1099,2024-08-18,Beauty,466.20,4,Central,26,Female
+21,1100,2024-07-10,Electronics,25.15,5,Central,55,Male
+21,1101,2024-05-28,Electronics,516.00,4,Central,55,Male
+21,1102,2024-08-26,Beauty,87.48,2,Central,55,Male
+22,1103,2024-08-03,Groceries,361.23,3,North,48,Female
+22,1104,2024-04-13,Clothing,143.73,1,North,48,Female
+22,1105,2024-05-03,Sports,448.00,5,North,48,Female
+22,1106,2024-05-05,Groceries,898.45,5,North,48,Female
+22,1107,2024-02-25,Sports,552.69,3,North,48,Female
+22,1108,2024-01-08,Clothing,524.90,5,North,48,Female
+22,1109,2024-12-17,Groceries,793.00,4,North,48,Female
+23,1110,2024-08-17,Home & Garden,123.88,2,South,63,Male
+23,1111,2024-03-05,Clothing,229.35,3,South,63,Male
+23,1112,2024-11-20,Groceries,672.70,5,South,63,Male
+23,1113,2024-06-15,Groceries,458.15,5,South,63,Male
+23,1114,2024-03-04,Groceries,509.64,4,South,63,Male
+24,1115,2024-01-16,Electronics,132.28,1,North,52,Male
+24,1116,2024-03-19,Home & Garden,126.84,4,North,52,Male
+24,1117,2024-08-13,Clothing,285.40,4,North,52,Male
+24,1118,2024-05-06,Home & Garden,106.00,5,North,52,Male
+25,1119,2024-12-09,Clothing,499.00,4,Central,59,Female
+25,1120,2024-07-28,Home & Garden,73.80,2,Central,59,Female
+25,1121,2024-07-14,Clothing,173.09,1,Central,59,Female
+25,1122,2024-09-03,Groceries,589.59,3,Central,59,Female
+25,1123,2024-03-23,Groceries,890.45,5,Central,59,Female
+26,1124,2024-08-23,Home & Garden,154.68,2,Central,36,Female
+26,1125,2024-06-28,Sports,257.95,5,Central,36,Female
+26,1126,2024-12-30,Groceries,469.64,4,Central,36,Female
+26,1127,2024-01-18,Clothing,39.45,3,Central,36,Female
+26,1128,2024-06-13,Electronics,311.06,2,Central,36,Female
+27,1129,2024-04-06,Home & Garden,250.32,4,South,65,Female
+27,1130,2024-12-12,Electronics,395.60,5,South,65,Female
+27,1131,2024-08-14,Electronics,468.28,4,South,65,Female
+27,1132,2024-12-21,Sports,170.22,1,South,65,Female
+27,1133,2024-01-20,Home & Garden,28.17,3,South,65,Female
+28,1134,2024-03-10,Sports,200.48,4,South,41,Male
+28,1135,2024-11-20,Beauty,787.40,4,South,41,Male
+28,1136,2024-03-18,Clothing,419.28,4,South,41,Male
+29,1137,2024-09-02,Clothing,7.95,1,North,58,Female
+29,1138,2024-10-16,Groceries,129.69,1,North,58,Female
+29,1139,2024-05-15,Electronics,247.65,5,North,58,Female
+29,1140,2024-07-22,Electronics,363.98,2,North,58,Female
+29,1141,2024-12-04,Clothing,163.04,1,North,58,Female
+29,1142,2024-02-24,Home & Garden,958.85,5,North,58,Female
+29,1143,2024-07-17,Home & Garden,37.28,2,North,58,Female
+30,1144,2024-10-22,Sports,509.68,4,West,49,Female
+30,1145,2024-03-13,Clothing,77.82,3,West,49,Female
+30,1146,2024-06-04,Clothing,498.24,4,West,49,Female
+31,1147,2024-11-16,Electronics,530.60,4,East,34,Male
+31,1148,2024-06-16,Sports,471.45,3,East,34,Male
+31,1149,2024-12-02,Groceries,131.94,3,East,34,Male
+31,1150,2024-06-30,Home & Garden,910.50,5,East,34,Male
+31,1151,2024-05-05,Sports,203.60,2,East,34,Male
+31,1152,2024-12-12,Beauty,384.12,2,East,34,Male
+32,1153,2024-09-16,Home & Garden,90.06,2,West,40,Male
+32,1154,2024-02-02,Electronics,25.60,2,West,40,Male
+32,1155,2024-08-22,Beauty,280.02,3,West,40,Male
+32,1156,2024-09-27,Groceries,317.74,2,West,40,Male
+33,1157,2024-04-16,Sports,170.82,2,West,41,Male
+33,1158,2024-10-15,Beauty,85.28,2,West,41,Male
+33,1159,2024-08-05,Groceries,879.55,5,West,41,Male
+33,1160,2024-01-23,Groceries,344.50,2,West,41,Male
+33,1161,2024-03-02,Groceries,30.73,1,West,41,Male
+34,1162,2024-04-07,Home & Garden,695.24,4,South,26,Male
+34,1163,2024-09-21,Beauty,110.12,2,South,26,Male
+34,1164,2024-08-13,Beauty,501.25,5,South,26,Male
+34,1165,2024-08-17,Groceries,359.60,2,South,26,Male
+34,1166,2024-12-15,Groceries,550.23,3,South,26,Male
+34,1167,2024-11-01,Beauty,176.72,1,South,26,Male
+34,1168,2024-07-26,Clothing,169.39,1,South,26,Male
+35,1169,2024-07-26,Electronics,389.92,2,Central,37,Male
+35,1170,2024-04-14,Groceries,21.88,1,Central,37,Male
+35,1171,2024-04-21,Clothing,671.25,5,Central,37,Male
+35,1172,2024-08-22,Clothing,361.98,2,Central,37,Male
+35,1173,2024-06-17,Home & Garden,158.32,4,Central,37,Male
+36,1174,2024-10-23,Home & Garden,190.72,4,East,34,Male
+36,1175,2024-11-15,Groceries,69.17,1,East,34,Male
+36,1176,2024-01-11,Electronics,459.84,3,East,34,Male
+36,1177,2024-03-27,Home & Garden,160.48,1,East,34,Male
+36,1178,2024-12-23,Groceries,326.52,3,East,34,Male
+37,1179,2024-10-21,Groceries,58.24,1,North,18,Female
+37,1180,2024-09-23,Home & Garden,61.62,1,North,18,Female
+37,1181,2024-11-29,Beauty,509.30,5,North,18,Female
+37,1182,2024-01-22,Beauty,381.00,5,North,18,Female
+37,1183,2024-12-19,Groceries,239.88,4,North,18,Female
+37,1184,2024-01-26,Beauty,264.00,5,North,18,Female
+38,1185,2024-10-20,Beauty,659.96,4,South,42,Female
+38,1186,2024-07-22,Sports,729.48,4,South,42,Female
+38,1187,2024-03-17,Electronics,89.48,2,South,42,Female
+38,1188,2024-01-08,Beauty,314.60,2,South,42,Female
+38,1189,2024-05-05,Electronics,189.97,1,South,42,Female
+38,1190,2024-05-01,Clothing,751.15,5,South,42,Female
+38,1191,2024-10-20,Clothing,545.10,3,South,42,Female
+39,1192,2024-02-27,Clothing,149.88,3,Central,51,Female
+39,1193,2024-12-11,Groceries,359.55,5,Central,51,Female
+39,1194,2024-11-20,Beauty,43.51,1,Central,51,Female
+39,1195,2024-08-13,Home & Garden,85.20,5,Central,51,Female
+40,1196,2024-03-29,Clothing,11.19,1,South,24,Female
+40,1197,2024-05-01,Sports,412.50,5,South,24,Female
+40,1198,2024-06-21,Groceries,113.38,2,South,24,Female
+40,1199,2024-11-22,Home & Garden,545.30,5,South,24,Female
+40,1200,2024-07-19,Groceries,108.60,4,South,24,Female
+40,1201,2024-06-24,Sports,100.44,2,South,24,Female
+40,1202,2024-01-26,Home & Garden,214.90,2,South,24,Female
+41,1203,2024-11-16,Clothing,181.84,2,East,53,Male
+41,1204,2024-11-30,Groceries,387.66,3,East,53,Male
+41,1205,2024-08-11,Clothing,666.08,4,East,53,Male
+42,1206,2024-02-19,Home & Garden,154.92,2,South,49,Female
+42,1207,2024-04-26,Home & Garden,102.72,2,South,49,Female
+42,1208,2024-10-28,Clothing,53.72,4,South,49,Female
+42,1209,2024-02-16,Groceries,67.68,3,South,49,Female
+43,1210,2024-10-28,Home & Garden,469.96,4,North,57,Male
+43,1211,2024-12-05,Groceries,103.38,2,North,57,Male
+43,1212,2024-03-09,Sports,650.56,4,North,57,Male
+43,1213,2024-06-25,Clothing,183.71,1,North,57,Male
+43,1214,2024-04-25,Groceries,247.74,2,North,57,Male
+44,1215,2024-02-09,Electronics,555.69,3,East,65,Female
+44,1216,2024-11-08,Electronics,182.52,3,East,65,Female
+44,1217,2024-08-10,Groceries,188.34,1,East,65,Female
+44,1218,2024-11-06,Clothing,482.19,3,East,65,Female
+44,1219,2024-03-19,Clothing,25.49,1,East,65,Female
+44,1220,2024-08-19,Beauty,371.79,3,East,65,Female
+45,1221,2024-01-29,Electronics,68.16,4,West,31,Male
+45,1222,2024-09-27,Clothing,279.30,3,West,31,Male
+45,1223,2024-02-01,Sports,292.14,3,West,31,Male
+46,1224,2024-09-18,Electronics,42.73,1,Central,45,Male
+46,1225,2024-02-12,Home & Garden,169.50,2,Central,45,Male
+46,1226,2024-01-25,Electronics,571.20,3,Central,45,Male
+47,1227,2024-10-18,Home & Garden,258.30,3,North,64,Female
+47,1228,2024-08-10,Beauty,184.94,1,North,64,Female
+47,1229,2024-03-08,Home & Garden,284.42,2,North,64,Female
+47,1230,2024-03-06,Groceries,399.70,5,North,64,Female
+47,1231,2024-05-12,Sports,166.80,2,North,64,Female
+47,1232,2024-01-17,Groceries,772.25,5,North,64,Female
+47,1233,2024-01-11,Electronics,161.51,1,North,64,Female
+48,1234,2024-10-18,Groceries,708.68,4,West,53,Female
+48,1235,2024-07-24,Home & Garden,584.34,3,West,53,Female
+48,1236,2024-12-15,Clothing,107.64,3,West,53,Female
+48,1237,2024-09-20,Groceries,290.85,5,West,53,Female
+48,1238,2024-02-23,Groceries,35.54,1,West,53,Female
+49,1239,2024-04-18,Home & Garden,162.84,3,Central,64,Female
+49,1240,2024-01-27,Electronics,157.35,5,Central,64,Female
+49,1241,2024-08-29,Clothing,442.70,5,Central,64,Female
+49,1242,2024-06-10,Sports,451.65,3,Central,64,Female
+50,1243,2024-04-21,Beauty,417.08,4,North,32,Male
+50,1244,2024-12-07,Groceries,167.76,4,North,32,Male
+50,1245,2024-03-24,Electronics,353.08,2,North,32,Male
+50,1246,2024-03-08,Electronics,963.80,5,North,32,Male
+50,1247,2024-12-28,Clothing,92.54,2,North,32,Male
+50,1248,2024-03-13,Electronics,60.38,2,North,32,Male
+50,1249,2024-09-22,Clothing,276.60,5,North,32,Male
